@@ -1,0 +1,31 @@
+<%
+   prj_errors=measure('prj_errors')
+-%>
+<h2>  <div class="dashbox">
+                <p class="title">Project Metadata Plugin</p>
+            </div>
+</h2>
+<table width="100%">
+    <tbody>
+    <tr>
+        <td valign="top" align="left">
+            <table>
+                <tr>
+                    <td>
+                        <div class="dashbox">
+                            <p class="big">
+                                ERRORS</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dashbox">
+                            <p class="big">
+                                <%= format_measure(prj_errors) -%></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
